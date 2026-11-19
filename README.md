@@ -1,162 +1,163 @@
-# 🚀 StockPilot
-### Smart Inventory & Business Management System
+# StockPilot – Inventory Management System
 
-**Take control of your inventory. Simplify your operations. Manage your business with confidence.**
+  A Full-Stack Inventory Management Platform
 
-StockPilot is a web-based inventory and business management application designed to help businesses organize their products, monitor stock activities, manage warehouse operations, and maintain better control over their inventory.
+Simplifying product management, inventory organization, and sales operations.
 
-Built with PHP and MySQL, StockPilot provides a centralized platform where administrators, managers, and warehouse staff can work together to support efficient business operations.
+🚀 EXPLORE LIVE APPLICATION [https://stockpilot.freedev.app/](https://stockpilot.freedev.app/)
 
 ---
 
-## 🌟 Overview
+## 📖 About Stock Pilot
 
-Managing inventory shouldn't be complicated.
+Stock Pilot is a web-based inventory management application designed to help businesses organize products, manage categories, monitor stock information, and handle sales operations through a centralized platform.
 
-StockPilot brings essential inventory management activities into one organized system. From user access and role management to inventory monitoring, it helps businesses maintain visibility and structure across their daily operations.
+The application provides a structured dashboard and dedicated management interfaces that make essential inventory activities easier to access and manage.
 
-Whether you're managing a small business, a warehouse, or a growing organization, StockPilot provides a foundation for more organized inventory management.
+Developed with PHP and MySQL, Stock Pilot demonstrates practical full-stack development, database integration, authentication, CRUD operations, and frontend interface design.
 
 ## ✨ Key Features
 
-- **Centralized Dashboard** — Access important inventory and business information from one place.
-- **User Authentication** — Secure login and account access.
-- **Role-Based Access Control** — Separate access levels for administrators, managers, and warehouse staff.
-- **User Registration** — Allow authorized new users to create warehouse staff accounts.
-- **Inventory Management** — Organize and manage business inventory records.
-- **Warehouse Operations** — Support day-to-day warehouse activities.
-- **Stock Monitoring** — Maintain visibility into inventory information.
-- **Database Integration** — Store and manage application data using MySQL.
-- **Responsive Interface** — Access the application through a modern web browser.
+### 📊 Dashboard
 
-## 👥 User Roles
+- Centralized inventory management interface.
+- Overview of important business information.
+- Quick navigation to application modules.
 
-| Role | Responsibilities |
-|---|---|
-| Administrator | Oversees the application, users, and system management. |
-| Manager | Handles assigned management and operational responsibilities. |
-| Warehouse Staff | Performs permitted warehouse and inventory activities. |
+### 📦 Product Management
 
-Each user works within the permissions assigned to their account.
+- Add and register products.
+- View existing product records.
+- Update product information.
+- Organize and maintain product data.
+
+### 🗂️ Category Management
+
+- Create product categories.
+- View and manage existing categories.
+- Organize products through structured classifications.
+
+### 💰 Sales Management
+
+- Manage sales records.
+- Record and track sales transactions.
+- Maintain organized transaction information.
+
+### 🔐 Authentication
+
+- User login functionality.
+- Session-based authentication.
+- Protected application pages.
+
+## 🖥️ Application Screenshots
+
+The following screenshots showcase the main interfaces of Stock Pilot.
+
+### 1. Dashboard
+
+
+
+### 2. Product Management
+
+
+
+### 3. Category Management
+
+
+
+### 4. Sales Management
+
+
 
 ## 🛠️ Technology Stack
 
-| Technology | Purpose |
-|---|---|
-| PHP | Backend application logic |
-| MySQL | Database management |
-| HTML5 | Application structure |
-| CSS3 | Interface styling |
-| JavaScript | Frontend interactions |
-| Bootstrap | Responsive interface components |
+| Technology | Purpose                                        |
+| ---------- | ---------------------------------------------- |
+| PHP        | Backend development and server-side processing |
+| MySQL      | Relational database management                 |
+| JavaScript | Frontend interactivity                         |
+| HTML5      | Web page structure                             |
+| CSS3       | Styling and responsive layouts                 |
+| Apache     | Web server environment                         |
 
-## 📸 Application Access
+## 🏗️ Application Architecture
 
-**Live Website:**  
-https://stockpilot.freedev.app/
+StockPilot follows a server-side web application architecture.
 
-## 📂 Project Structure
+- **Frontend:** HTML5, CSS3, and JavaScript.
+- **Backend:** PHP.
+- **Database:** MySQL.
+- **Web Server:** Apache.
 
-```text
-StockPilot/
-│
-├── index.php
-├── setup.php
-├── config.php
-├── database.sql
-│
-├── includes/
-│
-├── modules/
-│
-├── assets/
-│
-└── README.md
-```
+The PHP backend processes application requests and communicates with MySQL to store and retrieve application records.
 
-## ⚙️ Installation & Setup
+## ⚙️ Installation and Setup
 
-Follow these steps to run StockPilot locally.
+### Prerequisites
 
-**1. Install the requirements**
-
-Install XAMPP or another compatible PHP and MySQL environment.
-
-**2. Download the project**
-
-Clone the repository or download the source code as a ZIP file.
-
-**3. Move the project**
-
-Place the StockPilot folder inside your XAMPP `htdocs` directory.
-
-**4. Start the services**
-
-Open XAMPP Control Panel and start:
-
-- Apache
+- PHP
 - MySQL
+- Apache
+- XAMPP or an equivalent local development environment
 
-**5. Create the database**
+### Steps
 
-Open phpMyAdmin, create your database, and import the supplied `database.sql` file.
-
-**6. Configure the application**
-
-Update the database connection settings in `config.php` with your local database details.
-
-**7. Create the first administrator**
-
-Open:
-
-```text
-http://localhost/StockPilot/setup.php
-```
-
-Complete the administrator setup.
-
-**8. Launch StockPilot**
-
-Visit:
+1. Install XAMPP.
+2. Start Apache and MySQL.
+3. Clone or download this repository.
+4. Move the project folder into the XAMPP `htdocs` directory.
+5. Create the required database using phpMyAdmin.
+6. Import the database SQL file if included.
+7. Configure the database connection using your local credentials.
+8. Open the application in your browser:
 
 ```text
 http://localhost/StockPilot/
 ```
 
-You can now access the application.
+**Note:** Adjust the database configuration to match your local development environment.
 
-> **Security:** Delete `setup.php` after successfully creating your first administrator account. Never publish database passwords or private encryption keys.
+## 🔒 Security Considerations
 
-## 🔐 Security & Access
+StockPilot incorporates authentication and session-based access protection.
 
-StockPilot uses account-based access and role assignments to organize system permissions.
+For secure deployment:
 
-Public registration is intended for Warehouse Staff accounts. Administrator privileges should remain restricted to authorized personnel.
+- Keep database credentials private.
+- Exclude production configuration files from public source control.
+- Use secure password storage.
+- Validate and sanitize user input.
+- Apply appropriate access controls to protected pages.
 
-Keep production credentials and sensitive configuration files out of public repositories.
+## 🎯 Project Objectives
 
-## 🎯 Project Goals
+StockPilot was developed to demonstrate the practical implementation of a database-driven business management application.
 
-StockPilot was developed to demonstrate how web technologies can be combined to create a practical inventory and business management solution.
+The project showcases:
 
-Its goals include:
+- Full-stack web application development.
+- PHP backend programming.
+- MySQL database integration.
+- CRUD operations.
+- Product and category management.
+- Inventory and sales record management.
+- Authentication and session handling.
+- Frontend interface development.
 
-- Improving inventory organization.
-- Supporting structured warehouse operations.
-- Simplifying user and role management.
-- Providing centralized access to business information.
-- Creating a foundation for scalable business management.
+## 🌐 Live Application
+
+[**Visit Stock Pilot – Live Demo**](https://stockpilot.freedev.app/)
 
 ## 👨‍💻 Developer
 
 **Dike Frankjacob Chizurumoke**
 
-Software Developer | Web Application Development
+Full-Stack Web Developer
 
-## 📄 License
-
-This project is presented as a software development and portfolio project. Please contact the developer regarding reuse, distribution, or licensing permissions.
+- **GitHub:** [dikefranka56-spec](https://github.com/dikefranka56-spec)
+- **Live Project:** Stock Pilot
 
 ---
 
-**StockPilot — Smarter Inventory. Better Business.**
+**Stock Pilot – Smarter Inventory. Better Business Management.**
+
